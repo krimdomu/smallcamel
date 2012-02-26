@@ -1,0 +1,26 @@
+lib/MovingCamel.pm
+lib/MovingCamel/Base.pm
+lib/MovingCamel/Base/Type/Base.pm
+lib/MovingCamel/Base/Type/Int.pm
+lib/MovingCamel/Base/Type/String.pm
+lib/MovingCamel/Controller.pm
+lib/MovingCamel/Exception.pm
+lib/MovingCamel/Exception/ReadOnly.pm
+lib/MovingCamel/Exception/RendererNotFound.pm
+lib/MovingCamel/Exception/TemplateError.pm
+lib/MovingCamel/Exception/TypeNotFound.pm
+lib/MovingCamel/Exception/WrongValue.pm
+lib/MovingCamel/Exporter.pm
+lib/MovingCamel/Handler.pm
+lib/MovingCamel/Handler/CGI.pm
+lib/MovingCamel/JSON.pm
+lib/MovingCamel/Renderer.pm
+lib/MovingCamel/Renderer/HTML.pm
+lib/MovingCamel/Renderer/JSON.pm
+lib/MovingCamel/Renderer/TEXT.pm
+lib/MovingCamel/Server/CGI.pm
+lib/MovingCamel/Server/FCGI.pm
+lib/MovingCamel/Server/Simple.pm
+lib/MovingCamel/Template.pm
+Makefile.PL
+MANIFEST			This list of files

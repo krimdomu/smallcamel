@@ -1,0 +1,45 @@
+=pod
+
+=head1 MovingCamel - A small MVC Framework
+
+MovingCamel is a small MVC Framework written in Perl with compatibility for Perl 5.8 in mind and with less dependencies.
+
+It can be used as a CGI or Fast CGI Script. A development server is included.
+
+=head1 Creating an Application
+
+It is possible to write a small application just in one file. But it is also possible to grow the application and split the controllers into many files.
+
+ #!/usr/bin/env perl
+   
+ package Hello;
+    
+ use MovingCamel::Controller;
+ use base qw(MovingCamel::Controller);
+    
+ sub GET {
+    my ($self) = @_;
+    $self->render(-text => "Hello World");
+ }
+     
+ sub world {
+    my ($self) = @_;
+    $self->render(-html => "<html><body><h1>Hello You!</h1></body></html>");
+ }
+    
+ 1;
+   
+ package main;
+    
+ use MovingCamel;
+    
+ my $urls = {
+    '/' => 'Hello',
+    '/(.*?)' => 'Hello::\1',
+ };
+    
+ MovingCamel->run($urls);
+    
+ 1;
+
+Now you can just start your application with I<perl filename.pl> and point your browser to L<http://localhost:3000/>.
