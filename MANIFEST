@@ -24,3 +24,4 @@ lib/MovingCamel/Server/Simple.pm
 lib/MovingCamel/Template.pm
 Makefile.PL
 MANIFEST			This list of files
+t/base.t
