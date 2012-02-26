@@ -12,6 +12,8 @@ use warnings;
 use MovingCamel::Base;
 use Data::Dumper;
 
+our $VERSION = "0.0.1";
+
 has tx => { is => 'r' };
 
 sub run {
